@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int mat[3][3], i, j, sum = 0;
+    
+    printf("Input the values:\n");
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            scanf("%d", &mat[i][j]);
+            sum = mat[0][0]+mat[1][1]+mat[2][2];
+        }
+    }
+    
+    printf("The matrix:\n");
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            printf("%d ", mat[i][j]);
+        }
+        printf("\n");
+    }
+    
+    printf("Sum of all elements in the matrix: %d\n", sum);
+
+    return 0;
+}
